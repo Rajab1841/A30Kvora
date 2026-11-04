@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>⚡ A10Kervora743 · HOT DEALS 🔥</title>
+    <title>⚡ A30Kvora · HOT DEALS 🔥</title>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -104,6 +104,13 @@
             outline: none;
         }
         .settings-panel input:focus { border-color: #ffd166; box-shadow: 0 0 12px #ffd16655; }
+        .settings-panel input.limit-input {
+            width: 60px;
+            padding: 6px 8px;
+            font-size: 0.9rem;
+            border-color: #06d6a0;
+        }
+        .settings-panel input.limit-input:focus { border-color: #06d6a0; box-shadow: 0 0 12px #06d6a055; }
         .save-btn {
             background: linear-gradient(135deg, #06d6a0, #0d5240);
             border: none;
@@ -238,144 +245,101 @@
 </head>
 <body>
 <div class="offer-card">
-    <h1><i class="fas fa-crown"></i> A10Kervora743 DEAL ZONE <i class="fas fa-bolt"></i></h1>
-    <div class="sub-head"><i class="fas fa-fire-flame-curved"></i> 46 PREMIUM OFFERS · ALL ACTIVE <i class="fas fa-gem"></i></div>
+    <h1><i class="fas fa-crown"></i> A30Kvora DEAL ZONE <i class="fas fa-bolt"></i></h1>
+    <div class="sub-head"><i class="fas fa-fire-flame-curved"></i> 26 PREMIUM OFFERS · ALL ACTIVE <i class="fas fa-gem"></i></div>
 
-    <!-- POPUP SETTINGS BUTTON -->
     <div class="popup-settings-wrapper">
-        <button class="popup-settings-btn" onclick="openPopupSettings()"><i class="fas fa-cog"></i> ⚠️ ALLOW POPUPS FIRST (OPEN SETTINGS)</button>
+        <button class="popup-settings-btn" onclick="openPopupSettings()"><i class="fas fa-cog"></i> ALLOW POPUPS FIRST (OPEN SETTINGS)</button>
         <span class="popup-note">Click → Copy URL → Open new tab → Paste → Allow → Then START</span>
     </div>
 
-    <!-- SETTINGS PANEL -->
     <div class="settings-panel">
-        <label for="roundInput">🔄 ROUNDS:</label>
+        <label for="roundInput">ROUNDS:</label>
         <input type="number" id="roundInput" value="3" min="1" max="100" onchange="saveRoundSetting()">
-        <button class="save-btn" onclick="saveRoundSetting()">💾 SAVE</button>
+        <label for="limitInput">LIMIT:</label>
+        <input type="number" id="limitInput" class="limit-input" value="0" min="0" max="9999" placeholder="0=∞" onchange="saveRoundSetting()">
+        <button class="save-btn" onclick="saveRoundSetting()">SAVE</button>
         <span style="color:#06d6a0;font-size:0.85rem;" id="saveConfirm"></span>
     </div>
 
-    <!-- AUTO CLICK BUTTON -->
     <div class="auto-click-wrapper">
-        <button class="auto-click-btn" id="autoClickBtn" onclick="startAutoClick()">🚀 START AUTO CLICK</button>
-        <div class="auto-status" id="autoStatus">Ready · <span id="roundDisplay">3</span> round(s)</div>
+        <button class="auto-click-btn" id="autoClickBtn" onclick="startAutoClick()">START AUTO CLICK</button>
+        <div class="auto-status" id="autoStatus">Ready · <span id="roundDisplay">3</span> round(s) · limit <span id="limitDisplay">∞</span></div>
     </div>
 
-    <!-- Dashboard -->
     <div class="click-dashboard">
-        <div class="total-clicks"><i class="fas fa-chart-pie"></i><span>🔥 TOTAL CLAIMS</span></div>
+        <div class="total-clicks"><i class="fas fa-chart-pie"></i><span>TOTAL CLAIMS</span></div>
         <div class="click-badge"><i class="fas fa-fingerprint"></i> <span id="globalCounter">0</span></div>
         <div class="legend"><div class="legend-item"><span class="legend-dot"></span> available</div><div class="legend-item"><span class="legend-dot used"></span> claimed</div></div>
     </div>
 
-    <!-- ALL 46 OFFERS -->
-    <div class="section-label"><i class="fas fa-star"></i> 🔥 HOT PREMIUM DEALS 🔥 <i class="fas fa-star"></i></div>
+    <div class="section-label"><i class="fas fa-star"></i> HOT PREMIUM DEALS <i class="fas fa-star"></i></div>
     <div class="btn-grid" id="offerGrid">
         <!-- 1 -->
-        <a href="https://tightslybella.com/tuy4tqdmb?key=ac77906e8ab30926085c45a251d4065d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_1" bn="1"><i class="fas fa-bolt"></i> KERV BOLT 1 <span class="click-counter" id="count_1">0</span></a>
+        <a href="https://encyclopediainsoluble.com/wx0qgym3?key=2a2a6d906c9fdd85c74763ce41aedf5b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_1" bn="1"><i class="fas fa-headphones"></i> A30KVORA AUDIO 1 <span class="click-counter" id="count_1">0</span></a>
         <!-- 2 -->
-        <a href="https://tightslybella.com/qif5qfpc?key=924638355af5b6df03c752a761c3e84b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_2" bn="2"><i class="fas fa-rocket"></i> KERV ROCKET 2 <span class="click-counter" id="count_2">0</span></a>
+        <a href="https://encyclopediainsoluble.com/ck6uj7eq54?key=90753f2e7e254642bcdcb7fc58cf5665" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_2" bn="2"><i class="fas fa-meteor"></i> A30KVORA METEOR 2 <span class="click-counter" id="count_2">0</span></a>
         <!-- 3 -->
-        <a href="https://tightslybella.com/eu1ah7mj?key=6d8ac35647bd01313a4dd2f79ccad9b5" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_3" bn="3"><i class="fas fa-gift"></i> KERV GIFT 3 <span class="click-counter" id="count_3">0</span></a>
+        <a href="https://encyclopediainsoluble.com/epss2g4qgd?key=e19240202d8aa7bd30d9ffa04a586b8d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_3" bn="3"><i class="fas fa-bolt"></i> A30KVORA THUNDER 3 <span class="click-counter" id="count_3">0</span></a>
         <!-- 4 -->
-        <a href="https://tightslybella.com/v9b0fc20k5?key=3e9f4a6baec2e1dbb0888c72e74d0e52" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_4" bn="4"><i class="fas fa-star"></i> KERV STAR 4 <span class="click-counter" id="count_4">0</span></a>
+        <a href="https://encyclopediainsoluble.com/ftbdrgicgs?key=3b20c3c05eb3c78100dcd3feb5ba63e7" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_4" bn="4"><i class="fas fa-wind"></i> A30KVORA WIND 4 <span class="click-counter" id="count_4">0</span></a>
         <!-- 5 -->
-        <a href="https://tightslybella.com/apwvkxxhmu?key=caef1e74672afffbe1bccbdd87b01cd2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_5" bn="5"><i class="fas fa-fire"></i> KERV FIRE 5 <span class="click-counter" id="count_5">0</span></a>
+        <a href="https://encyclopediainsoluble.com/wnp0gnqtx?key=a0860ae8014f093c35350d65fe28904f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_5" bn="5"><i class="fas fa-star"></i> A30KVORA GALAXY 5 <span class="click-counter" id="count_5">0</span></a>
         <!-- 6 -->
-        <a href="https://tightslybella.com/pisryiakq9?key=21d170598f01f8f8bd7a96200f2a261d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_6" bn="6"><i class="fas fa-umbrella-beach"></i> KERV BEACH 6 <span class="click-counter" id="count_6">0</span></a>
+        <a href="https://encyclopediainsoluble.com/kbx7ei3z3?key=f55a10ee724b776eadc7a44688516152" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_6" bn="6"><i class="fas fa-gem"></i> A30KVORA RUBY 6 <span class="click-counter" id="count_6">0</span></a>
         <!-- 7 -->
-        <a href="https://tightslybella.com/misc1ax3?key=47a1c49f21807a8ab865f789bcb97616" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_7" bn="7"><i class="fas fa-trophy"></i> KERV TROPHY 7 <span class="click-counter" id="count_7">0</span></a>
+        <a href="https://encyclopediainsoluble.com/nu7j9m8im?key=f19b73557536d823d31dfe498b890f5b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_7" bn="7"><i class="fas fa-staff-snake"></i> A30KVORA COBRA 7 <span class="click-counter" id="count_7">0</span></a>
         <!-- 8 -->
-        <a href="https://tightslybella.com/frves0waw?key=6ccf8edd49dcab743999b197bd296a37" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_8" bn="8"><i class="fas fa-wallet"></i> KERV WALLET 8 <span class="click-counter" id="count_8">0</span></a>
+        <a href="https://encyclopediainsoluble.com/tnyy3f3aks?key=4e83a3ee7b476b13803fed2dae180129" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_8" bn="8"><i class="fas fa-microchip"></i> A30KVORA CIRCUIT 8 <span class="click-counter" id="count_8">0</span></a>
         <!-- 9 -->
-        <a href="https://tightslybella.com/jx8d6h9f?key=8931146b5bfbd7fcaa27bf866ebebfda" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_9" bn="9"><i class="fas fa-gamepad"></i> KERV GAME 9 <span class="click-counter" id="count_9">0</span></a>
+        <a href="https://encyclopediainsoluble.com/a22w8uaqz?key=35a78573253c30919597c2857b1d5198" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_9" bn="9"><i class="fas fa-paw"></i> A30KVORA LION 9 <span class="click-counter" id="count_9">0</span></a>
         <!-- 10 -->
-        <a href="https://tightslybella.com/vps80kza8?key=effde80ac3e3cbb1c240209eba18671e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_10" bn="10"><i class="fas fa-pizza-slice"></i> KERV PIZZA 10 <span class="click-counter" id="count_10">0</span></a>
+        <a href="https://encyclopediainsoluble.com/fgphhvkeyk?key=903ec94e3b43494c34f8dc4ba2ea9d4e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_10" bn="10"><i class="fas fa-database"></i> A30KVORA BYTE 10 <span class="click-counter" id="count_10">0</span></a>
         <!-- 11 -->
-        <a href="https://tightslybella.com/km8ni36u?key=f3075b44a819699db0c2174615bf5d6c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_11" bn="11"><i class="fas fa-plane"></i> KERV JET 11 <span class="click-counter" id="count_11">0</span></a>
+        <a href="https://encyclopediainsoluble.com/etm986r8d2?key=3490cc194d603e2ab32798ff8b258b7b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_11" bn="11"><i class="fas fa-motorcycle"></i> A30KVORA BIKE 11 <span class="click-counter" id="count_11">0</span></a>
         <!-- 12 -->
-        <a href="https://tightslybella.com/c0paqnyr?key=777f14582d605a284668663f39b5e1f8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_12" bn="12"><i class="fas fa-fire-alt"></i> KERV FLAME 12 <span class="click-counter" id="count_12">0</span></a>
+        <a href="https://encyclopediainsoluble.com/u8v2bjwjue?key=15e1fdd9877929e85c079a774ff53fe7" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_12" bn="12"><i class="fas fa-lock"></i> A30KVORA CIPHER 12 <span class="click-counter" id="count_12">0</span></a>
         <!-- 13 -->
-        <a href="https://tightslybella.com/w16uigf61n?key=d80a22cc4712c3ef7185c0231ca33a41" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_13" bn="13"><i class="fas fa-magic"></i> KERV MAGIC 13 <span class="click-counter" id="count_13">0</span></a>
+        <a href="https://encyclopediainsoluble.com/i81j13b4?key=74e7f8770a36bede95aecc0913a06d74" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_13" bn="13"><i class="fas fa-fire"></i> A30KVORA EMBER 13 <span class="click-counter" id="count_13">0</span></a>
         <!-- 14 -->
-        <a href="https://tightslybella.com/ic831bs9?key=d7c4bf793b85a194b2751e79238351c2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_14" bn="14"><i class="fas fa-hat-wizard"></i> KERV WIZARD 14 <span class="click-counter" id="count_14">0</span></a>
+        <a href="https://encyclopediainsoluble.com/buzjhqkx?key=8a8181d1f8667de95abc8f62d1d1579b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_14" bn="14"><i class="fas fa-box-open"></i> A30KVORA BOX 14 <span class="click-counter" id="count_14">0</span></a>
         <!-- 15 -->
-        <a href="https://tightslybella.com/a77tpk9b?key=2a282957413fa5cf54f8b2370cf46289" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_15" bn="15"><i class="fas fa-gem"></i> KERV GEM 15 <span class="click-counter" id="count_15">0</span></a>
+        <a href="https://encyclopediainsoluble.com/h4i2v6ur?key=b485a097ac7766945bcaf5fd3bd05f09" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_15" bn="15"><i class="fas fa-crosshairs"></i> A30KVORA HUNTER 15 <span class="click-counter" id="count_15">0</span></a>
         <!-- 16 -->
-        <a href="https://tightslybella.com/b8bed1h9sq?key=d4638e5a9461e48984b1af015701c51f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_16" bn="16"><i class="fas fa-diamond"></i> KERV DIAMOND 16 <span class="click-counter" id="count_16">0</span></a>
+        <a href="https://encyclopediainsoluble.com/m919htxy?key=90f4d8411fdc46515e9d8089887dd2eb" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_16" bn="16"><i class="fas fa-crow"></i> A30KVORA RAVEN 16 <span class="click-counter" id="count_16">0</span></a>
         <!-- 17 -->
-        <a href="https://tightslybella.com/j7ctzyjbj?key=b4a794890aa1ba0621707789e834280f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_17" bn="17"><i class="fas fa-ring"></i> KERV RING 17 <span class="click-counter" id="count_17">0</span></a>
+        <a href="https://encyclopediainsoluble.com/wm1izaj91?key=82f07ce5b3f9ca7c05394169f0a3d8d5" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_17" bn="17"><i class="fas fa-horse"></i> A30KVORA HORSE 17 <span class="click-counter" id="count_17">0</span></a>
         <!-- 18 -->
-        <a href="https://tightslybella.com/n0i59nib?key=3eb101204fdf6a11ba47859214e224d8" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_18" bn="18"><i class="fas fa-box-open"></i> KERV BOX 18 <span class="click-counter" id="count_18">0</span></a>
+        <a href="https://encyclopediainsoluble.com/ygnfwvb1?key=6aaf898e31ac4a5e160ae25f9ce84cf5" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_18" bn="18"><i class="fas fa-smog"></i> A30KVORA SMOKE 18 <span class="click-counter" id="count_18">0</span></a>
         <!-- 19 -->
-        <a href="https://tightslybella.com/aqzniag3uf?key=33d1352098629036a68ccb14fe828cee" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_19" bn="19"><i class="fas fa-crown"></i> KERV CROWN 19 <span class="click-counter" id="count_19">0</span></a>
+        <a href="https://encyclopediainsoluble.com/czz96xkc1?key=b76b3c0774e7b9eced4457baca758c49" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_19" bn="19"><i class="fas fa-spider"></i> A30KVORA SPIDER 19 <span class="click-counter" id="count_19">0</span></a>
         <!-- 20 -->
-        <a href="https://tightslybella.com/t6mt7nt59i?key=9431296cfc0d1e03291a5fca0288d5bc" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_20" bn="20"><i class="fas fa-chess-queen"></i> KERV QUEEN 20 <span class="click-counter" id="count_20">0</span></a>
+        <a href="https://encyclopediainsoluble.com/pwcjj93m9u?key=370e1548babe2d2de026e010eb82a030" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_20" bn="20"><i class="fas fa-globe"></i> A30KVORA COSMOS 20 <span class="click-counter" id="count_20">0</span></a>
         <!-- 21 -->
-        <a href="https://tightslybella.com/uw643y69i0?key=1afa512739a29bb4586cb2fbe14e16ad" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_21" bn="21"><i class="fas fa-chess-king"></i> KERV KING 21 <span class="click-counter" id="count_21">0</span></a>
+        <a href="https://encyclopediainsoluble.com/d2qb3xkg?key=efe9837a9bdb415bb2c60dc6bb2604ba" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_21" bn="21"><i class="fas fa-chess-rook"></i> A30KVORA ROOK 21 <span class="click-counter" id="count_21">0</span></a>
         <!-- 22 -->
-        <a href="https://tightslybella.com/crdjk1gr?key=d96c49777c539c07cc6f3ab168759334" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_22" bn="22"><i class="fas fa-coffee"></i> KERV COFFEE 22 <span class="click-counter" id="count_22">0</span></a>
+        <a href="https://encyclopediainsoluble.com/v191z9yk9?key=42821ef36ac136c404796664d783a9ca" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_22" bn="22"><i class="fas fa-rocket"></i> A30KVORA ROCKET 22 <span class="click-counter" id="count_22">0</span></a>
         <!-- 23 -->
-        <a href="https://tightslybella.com/sj6x40069?key=9a17a79aedc39e817ea47e5a1915117d" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_23" bn="23"><i class="fas fa-car"></i> KERV CAR 23 <span class="click-counter" id="count_23">0</span></a>
+        <a href="https://encyclopediainsoluble.com/vhdr5r22nb?key=d9327d6f3183fe648f23c00e28afb96e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_23" bn="23"><i class="fas fa-droplet"></i> A30KVORA WATER 23 <span class="click-counter" id="count_23">0</span></a>
         <!-- 24 -->
-        <a href="https://tightslybella.com/iqu6bwkqg?key=0e9c537b43607509cad1816f3af92bc1" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_24" bn="24"><i class="fas fa-motorcycle"></i> KERV BIKE 24 <span class="click-counter" id="count_24">0</span></a>
+        <a href="https://encyclopediainsoluble.com/x3aqus1up?key=ea7b3f692b490a7a2801115be34b4add" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_24" bn="24"><i class="fas fa-coins"></i> A30KVORA GOLD 24 <span class="click-counter" id="count_24">0</span></a>
         <!-- 25 -->
-        <a href="https://tightslybella.com/bekqwvh3?key=bac6cadba484d5a749dad21021fcd494" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_25" bn="25"><i class="fas fa-home"></i> KERV HOME 25 <span class="click-counter" id="count_25">0</span></a>
+        <a href="https://encyclopediainsoluble.com/gw1qctz293?key=f9fc571203e1faac2d59fa2671506243" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_25" bn="25"><i class="fas fa-crown"></i> A30KVORA CROWN 25 <span class="click-counter" id="count_25">0</span></a>
         <!-- 26 -->
-        <a href="https://tightslybella.com/ztb20b54?key=136baef783d3a4f606a110428489888f" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_26" bn="26"><i class="fas fa-clock"></i> KERV TIME 26 <span class="click-counter" id="count_26">0</span></a>
-        <!-- 27 -->
-        <a href="https://tightslybella.com/rvsfcy3x?key=ab418da768a0607a9ce7b3ae287ca1f0" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_27" bn="27"><i class="fas fa-car-side"></i> KERV SIDE 27 <span class="click-counter" id="count_27">0</span></a>
-        <!-- 28 -->
-        <a href="https://tightslybella.com/ck251ggabz?key=5c540b12b86c3f8f001e2131c460cea2" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_28" bn="28"><i class="fas fa-gem"></i> KERV RUBY 28 <span class="click-counter" id="count_28">0</span></a>
-        <!-- 29 -->
-        <a href="https://tightslybella.com/jr0j1523f0?key=3a02d69f6a3983d4255113726e780dc6" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_29" bn="29"><i class="fas fa-coins"></i> KERV COIN 29 <span class="click-counter" id="count_29">0</span></a>
-        <!-- 30 -->
-        <a href="https://tightslybella.com/c73vwxhh?key=9e50873ca1830b2fbc4174883bed535c" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_30" bn="30"><i class="fab fa-bitcoin"></i> KERV BTC 30 <span class="click-counter" id="count_30">0</span></a>
-        <!-- 31 -->
-        <a href="https://tightslybella.com/b7ymrq1zx?key=92c8f0fb2c6b14a2f69c5f55a029578b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_31" bn="31"><i class="fas fa-building"></i> KERV TOWER 31 <span class="click-counter" id="count_31">0</span></a>
-        <!-- 32 -->
-        <a href="https://tightslybella.com/r4e867vu?key=60b5823d21ea8e3f8050663b970cc3ad" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_32" bn="32"><i class="fas fa-mug-hot"></i> KERV LATTE 32 <span class="click-counter" id="count_32">0</span></a>
-        <!-- 33 -->
-        <a href="https://tightslybella.com/s9zcupxpc?key=6ba702c70aca40706fa076bb3a6ed912" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_33" bn="33"><i class="fas fa-glass-whiskey"></i> KERV DRINK 33 <span class="click-counter" id="count_33">0</span></a>
-        <!-- 34 -->
-        <a href="https://tightslybella.com/ect6540jd?key=d21c713e1dbb19ad71053762b8e95904" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_34" bn="34"><i class="fas fa-caravan"></i> KERV VAN 34 <span class="click-counter" id="count_34">0</span></a>
-        <!-- 35 -->
-        <a href="https://tightslybella.com/hzhc9mfv?key=de0ee230ef232b0849818d774ab65e67" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_35" bn="35"><i class="fas fa-cocktail"></i> KERV COCKTAIL 35 <span class="click-counter" id="count_35">0</span></a>
-        <!-- 36 -->
-        <a href="https://tightslybella.com/q9zq4fyrb?key=e1ab43b8e39799e427f85123a1ca6a95" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_36" bn="36"><i class="fas fa-mobile-alt"></i> KERV MOBILE 36 <span class="click-counter" id="count_36">0</span></a>
-        <!-- 37 -->
-        <a href="https://tightslybella.com/m244jvnw6h?key=912951a4b9d55298bb5105215f1398ff" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_37" bn="37"><i class="fas fa-laptop"></i> KERV LAPTOP 37 <span class="click-counter" id="count_37">0</span></a>
-        <!-- 38 -->
-        <a href="https://tightslybella.com/txmxtjbnjd?key=b2e81b6e046f6c6c99ae34fabf5dcc85" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_38" bn="38"><i class="fas fa-headphones"></i> KERV AUDIO 38 <span class="click-counter" id="count_38">0</span></a>
-        <!-- 39 -->
-        <a href="https://tightslybella.com/w553v1qvta?key=3f339d41d21dd362b9df6b6c81c45a2a" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_39" bn="39"><i class="fas fa-tv"></i> KERV TV 39 <span class="click-counter" id="count_39">0</span></a>
-        <!-- 40 -->
-        <a href="https://tightslybella.com/gm94exqy7?key=c4176c758b955f6da9a16f51984880bf" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_40" bn="40"><i class="fas fa-gift"></i> KERV BONUS 40 <span class="click-counter" id="count_40">0</span></a>
-        <!-- 41 -->
-        <a href="https://tightslybella.com/jmvn85vcu?key=608da410af9565e88fa73bb59280b962" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_41" bn="41"><i class="fas fa-star"></i> KERV LUCKY 41 <span class="click-counter" id="count_41">0</span></a>
-        <!-- 42 -->
-        <a href="https://tightslybella.com/g10zwe2c?key=1030af67bbf24eda0eafea1a81c449ce" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_42" bn="42"><i class="fas fa-gem"></i> KERV BLUE 42 <span class="click-counter" id="count_42">0</span></a>
-        <!-- 43 -->
-        <a href="https://tightslybella.com/y4s9uvirga?key=97d6ae5cadf845a2c0a5054925a8b4dc" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_43" bn="43"><i class="fas fa-rocket"></i> KERV SPACE 43 <span class="click-counter" id="count_43">0</span></a>
-        <!-- 44 -->
-        <a href="https://tightslybella.com/x3umc6nb?key=7c035212bee0824bcbae571a9710230b" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_44" bn="44"><i class="fas fa-bolt"></i> KERV LIGHT 44 <span class="click-counter" id="count_44">0</span></a>
-        <!-- 45 -->
-        <a href="https://tightslybella.com/fu06habyj?key=2ba8db5f2b35310852b0a81ecdd75612" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_45" bn="45"><i class="fas fa-globe"></i> KERV GLOBE 45 <span class="click-counter" id="count_45">0</span></a>
-        <!-- 46 -->
-        <a href="https://tightslybella.com/uuuirfung?key=755124ba68e29536de946c635b5f4b4e" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_46" bn="46"><i class="fas fa-rainbow"></i> KERV RAINBOW 46 <span class="click-counter" id="count_46">0</span></a>
+        <a href="https://encyclopediainsoluble.com/bic6fg1t?key=b0027121f32d9ead187fa7b14d020f04" target="_blank" rel="noopener noreferrer" class="offer-btn" id="btn_26" bn="26"><i class="fas fa-cloud"></i> A30KVORA NEBULA 26 <span class="click-counter" id="count_26">0</span></a>
     </div>
 
     <div class="card-footer">
-        <span><i class="far fa-clock"></i> 46 active deals · instant access</span>
+        <span><i class="far fa-clock"></i> 26 active deals · instant access</span>
         <div class="reset-link" onclick="resetAllCounters()"><i class="fas fa-arrows-rotate"></i> reset counters</div>
     </div>
 </div>
 
 <script>
-    const btnsTotal = 46;
+    const btnsTotal = 26;
     let cMap = {};
     for (let i=1; i<=btnsTotal; i++) cMap['btn_'+i] = 0;
-    const STORE = 'mega_46_a10kervora743', RKEY = 'auto_rounds_v8';
+    const STORE = 'mega_26_generated', RKEY = 'auto_rounds_v8', LKEY = 'auto_limit_v1';
 
     function lCounts() { try { let s=localStorage.getItem(STORE); if(s) { let p=JSON.parse(s); for(let k in cMap) if(typeof p[k]==='number') cMap[k]=p[k]; } } catch(e){} }
     function sCounts() { try { localStorage.setItem(STORE, JSON.stringify(cMap)); } catch(e){} }
@@ -395,42 +359,85 @@
 
     function openPopupSettings() {
         let a = window.open('about:blank', '_blank');
-        if(a){a.document.write(`<html><head><title>Allow Popups</title><style>body{font-family:sans-serif;background:#1a0b2e;color:#fff;text-align:center;padding:40px;line-height:1.8;}.steps{background:#2d1b4e;padding:25px;border-radius:15px;display:inline-block;text-align:left;margin:20px;}.highlight{color:#ffd166;font-weight:bold;}code{background:#000;padding:4px 10px;border-radius:6px;color:#ffd166;font-size:16px;}button{background:#ff6b9d;color:#fff;border:none;padding:12px 30px;border-radius:30px;font-size:16px;cursor:pointer;margin-top:15px;}</style></head><body><h1>🔓 Allow Popups</h1><div class="steps"><p>📋 <span class="highlight">Step 1:</span> Copy URL:</p><p><code>chrome://settings/content/popups</code></p><p>📌 <span class="highlight">Step 2:</span> Open new tab (Ctrl+T)</p><p>📎 <span class="highlight">Step 3:</span> Paste & Enter</p><p>🔍 <span class="highlight">Step 4:</span> Allow this site</p><p>🔄 <span class="highlight">Step 5:</span> Come back & START</p></div><button onclick="navigator.clipboard.writeText('chrome://settings/content/popups').then(function(){}).catch(function(){})">📋 COPY SETTINGS URL</button></body></html>`);a.document.close();}
+        if(a){a.document.write(`<html><head><title>Allow Popups</title><style>body{font-family:sans-serif;background:#1a0b2e;color:#fff;text-align:center;padding:40px;line-height:1.8;}.steps{background:#2d1b4e;padding:25px;border-radius:15px;display:inline-block;text-align:left;margin:20px;}.highlight{color:#ffd166;font-weight:bold;}code{background:#000;padding:4px 10px;border-radius:6px;color:#ffd166;font-size:16px;}button{background:#ff6b9d;color:#fff;border:none;padding:12px 30px;border-radius:30px;font-size:16px;cursor:pointer;margin-top:15px;}</style></head><body><h1>Allow Popups</h1><div class="steps"><p>Step 1: Copy URL:</p><p><code>chrome://settings/content/popups</code></p><p>Step 2: Open new tab (Ctrl+T)</p><p>Step 3: Paste & Enter</p><p>Step 4: Allow this site</p><p>Step 5: Come back & START</p></div><button onclick="navigator.clipboard.writeText('chrome://settings/content/popups').then(function(){}).catch(function(){})">COPY SETTINGS URL</button></body></html>`);a.document.close();}
     }
 
     function gRounds() { try { let s=localStorage.getItem(RKEY); return s ? parseInt(s) : 3; } catch(e){ return 3; } }
+    function gLimit() { try { let s=localStorage.getItem(LKEY); if(!s) return 0; let v=parseInt(s); return (isNaN(v)||v<0) ? 0 : v; } catch(e){ return 0; } }
+
     function saveRoundSetting() {
-        let inp = document.getElementById('roundInput'), cf = document.getElementById('saveConfirm');
+        let inp = document.getElementById('roundInput');
+        let linp = document.getElementById('limitInput');
+        let cf = document.getElementById('saveConfirm');
         let v = parseInt(inp.value); if(isNaN(v)||v<1) v=1; if(v>100) v=100;
         inp.value = v; localStorage.setItem(RKEY, v);
+        let lv = parseInt(linp.value);
+        if(isNaN(lv) || lv < 0) lv = 0;
+        if(lv > 9999) lv = 9999;
+        linp.value = lv; localStorage.setItem(LKEY, lv);
         document.getElementById('roundDisplay').innerText = v;
-        cf.innerText = '✅ Saved: '+v+' round(s)'; setTimeout(()=>cf.innerText='',2000);
+        document.getElementById('limitDisplay').innerText = (lv === 0) ? '∞' : lv;
+        cf.innerText = 'Saved: ' + v + ' round(s) · limit ' + (lv===0?'∞':lv);
+        setTimeout(()=>cf.innerText='',2500);
     }
-    function loadRounds() { let r = gRounds(); document.getElementById('roundInput').value = r; document.getElementById('roundDisplay').innerText = r; }
+
+    function loadRounds() {
+        let r = gRounds(); let l = gLimit();
+        document.getElementById('roundInput').value = r;
+        document.getElementById('limitInput').value = l;
+        document.getElementById('roundDisplay').innerText = r;
+        document.getElementById('limitDisplay').innerText = (l === 0) ? '∞' : l;
+    }
 
     let running = false;
     function startAutoClick() {
-        if(running){alert('⚠️ Already running!');return;}
+        if(running){alert('Already running!');return;}
         let btns = document.querySelectorAll('.offer-btn');
-        if(!btns.length){alert('❌ No buttons!');return;}
-        let rds = gRounds(), all = btns.length * rds;
+        if(!btns.length){alert('No buttons!');return;}
+        let rds = gRounds(); let lim = gLimit();
+        let totalPossible = btns.length * rds;
+        let maxClicks = (lim === 0 || lim > totalPossible) ? totalPossible : lim;
         let st = document.getElementById('autoStatus'), sBtn = document.getElementById('autoClickBtn');
-        running = true; sBtn.disabled = true; sBtn.textContent = '⏳ CLICKING...';
+        running = true; sBtn.disabled = true; sBtn.textContent = 'CLICKING...';
         let cur = 0, round = 1, idx = 0;
-        st.textContent = '🔄 Round 1/'+rds+' · 0/'+all;
+        st.textContent = 'Round 1/'+rds+' · 0/'+maxClicks + (lim===0?' (∞)':' (limit '+lim+')');
         let t = setInterval(() => {
-            if(round>rds){clearInterval(t);st.textContent='✅ DONE! '+all+' clicks ('+btns.length+'×'+rds+')';sBtn.disabled=false;sBtn.textContent='🚀 START AUTO CLICK';running=false;return;}
-            if(idx>=btns.length){round++;idx=0;if(round>rds)return;st.textContent='🔄 Round '+round+'/'+rds+' · '+cur+'/'+all;return;}
-            let b=btns[idx],bid=b.id,url=b.href||b.getAttribute('href');
-            if(url){let a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();document.body.removeChild(a);cur++;if(bid&&cMap.hasOwnProperty(bid))inc(bid);st.textContent='🔄 R'+round+'/'+rds+' · #'+cur+'/'+all+' ✅';}
-            else{cur++;st.textContent='🔄 R'+round+'/'+rds+' · #'+cur+'/'+all+' ⚠️';}
+            if(cur >= maxClicks){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks' + (lim>0 && lim<totalPossible ? ' (limit reached)' : '');
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(round > rds){
+                clearInterval(t);
+                st.textContent = 'DONE! '+cur+' clicks ('+btns.length+'×'+rds+')';
+                sBtn.disabled = false; sBtn.textContent = 'START AUTO CLICK';
+                running = false; return;
+            }
+            if(idx >= btns.length){
+                round++; idx = 0;
+                if(round > rds) return;
+                st.textContent = 'Round '+round+'/'+rds+' · '+cur+'/'+maxClicks;
+                return;
+            }
+            let b = btns[idx], bid = b.id, url = b.href || b.getAttribute('href');
+            if(url){
+                let a = document.createElement('a');
+                a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+                document.body.appendChild(a); a.click(); document.body.removeChild(a);
+                cur++;
+                if(bid && cMap.hasOwnProperty(bid)) inc(bid);
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' OK';
+            } else {
+                cur++;
+                st.textContent = 'R'+round+'/'+rds+' · #'+cur+'/'+maxClicks+' SKIP';
+            }
             idx++;
-        },2000);
+        }, 2000);
     }
 
     for(let i=1;i<=btnsTotal;i++){let b=document.getElementById('btn_'+i);if(b)b.addEventListener('click',()=>inc('btn_'+i));}
     lCounts();loadRounds();refresh();
-    console.log('✅ 46 btns | Rounds: '+gRounds());
 </script>
 </body>
 </html>
